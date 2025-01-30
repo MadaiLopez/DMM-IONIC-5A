@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login actividad</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <form #frm login="ngForm" (ngSubmmit)="login(frm login)">
+    <br>
+    <ion-item>
+      <ion-input name="email" [ngModel] = "email" label="Email input" type="email" placeholder="email@domain.com"required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input name="password" [ngModel] = "password" labelplaceholder="**************" required></ion-input>
+    </ion-item>
+    <br>
+    <ion-button type ="submit" expand= "block">
+    ingresar
+    </ion-button>
+  </form>
+  <ion-text>
+    ¿No tienes cuenta?
+    <a routerLink="/register">Registrate</a>
+  </ion-text>
+  </ion-list>
+</ion-list>
+
+//desarrollar una pagina de registro 
+//escribir una contraseña y verificar contraseña y si no coincide 

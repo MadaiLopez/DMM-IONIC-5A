@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>WhasApp</ion-title>
+    <ion-searchbar></ion-searchbar>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="camera"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="ellipsis-vertical"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" mode="ios">
+  </ion-list Mode="ios">
+  <app-item-chat
+  *ngFor="let chat of chats"
+  [username]="chat.username"
+  [message]="chat.message"
+  [date]="21-03-2024"
+  [avatarUrl]=""
+  ></app-item-chat>
+</ion-list>
+  </ion-content>
